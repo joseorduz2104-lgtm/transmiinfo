@@ -1,0 +1,246 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TransMiInfo | Asistente Virtual</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f5f7;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #c8102e;
+            color: white;
+            padding: 22px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        header h1 {
+            font-size: 28px;
+        }
+
+        header span {
+            font-size: 14px;
+        }
+
+        .hero {
+            background: linear-gradient(120deg, #a90d27, #e52b45);
+            color: white;
+            padding: 65px 8%;
+            text-align: center;
+        }
+
+        .hero h2 {
+            font-size: 38px;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            max-width: 750px;
+            margin: auto;
+            font-size: 17px;
+        }
+
+        .container {
+            width: 85%;
+            max-width: 1100px;
+            margin: 40px auto;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 25px;
+            color: #b50f2d;
+            font-size: 27px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+        }
+
+        .card h3 {
+            color: #c8102e;
+            margin-bottom: 10px;
+        }
+
+        .chat-section {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+            margin-bottom: 40px;
+        }
+
+        .chat-section p {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .chat-frame {
+            width: 100%;
+            height: 650px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+        }
+
+        .notice {
+            background: #fff4e5;
+            border-left: 5px solid #e6a23c;
+            padding: 15px;
+            margin-top: 20px;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        footer {
+            background: #292929;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            margin-top: 50px;
+        }
+
+        @media (max-width: 600px) {
+            .hero h2 {
+                font-size: 29px;
+            }
+
+            .container {
+                width: 92%;
+            }
+
+            .chat-section {
+                padding: 15px;
+            }
+
+            .chat-frame {
+                height: 600px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>TransMiInfo</h1>
+        <span>Asistente virtual de TRANSMILENIO</span>
+    </header>
+
+    <section class="hero">
+        <h2>¡Bienvenido a TransMiInfo!</h2>
+        <p>
+            Tu asistente virtual para consultar información sobre
+            rutas, servicios, paraderos y datos institucionales
+            del sistema de transporte TRANSMILENIO de Bogotá.
+        </p>
+    </section>
+
+    <main class="container">
+
+        <section>
+            <h2 class="section-title">¿Qué es TransMiInfo?</h2>
+            <div class="card">
+                <p>
+                    TransMiInfo es un asistente virtual desarrollado
+                    mediante inteligencia artificial que facilita
+                    la consulta de información relacionada con
+                    TRANSMILENIO S.A. Su objetivo es ofrecer respuestas
+                    claras y accesibles utilizando una base de
+                    conocimiento documental.
+                </p>
+            </div>
+        </section>
+
+        <section style="margin-top:40px;">
+            <h2 class="section-title">¿Qué puedes consultar?</h2>
+
+            <div class="cards">
+                <div class="card">
+                    <h3>Rutas y servicios</h3>
+                    <p>Consulta información disponible sobre rutas,
+                    códigos y servicios del sistema.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Paraderos y estaciones</h3>
+                    <p>Consulta información del directorio de
+                    estaciones y paraderos registrados.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Información de viajes</h3>
+                    <p>Conoce los datos de viajes y calendarios
+                    disponibles en las fuentes.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Gestión institucional</h3>
+                    <p>Consulta indicadores, sostenibilidad y
+                    resultados institucionales de 2025.</p>
+                </div>
+            </div>
+        </section>
+
+        <section style="margin-top:45px;">
+            <h2 class="section-title">Habla con TransMiInfo</h2>
+
+            <div class="chat-section">
+                <p>
+                    Escribe tu pregunta en el siguiente chat
+                    y recibe orientación basada en los documentos
+                    disponibles.
+                </p>
+
+                <!-- REEMPLAZA ESTA URL CON EL ENLACE DEL IFRAME DE DIFY -->
+                <iframe
+    class="chat-frame"
+    src="https://udify.app/agent/tHTD0JXKskjORZju"
+    allow="microphone;clipboard-write"
+    title="Asistente virtual TransMiInfo">
+</iframe>
+
+                <div class="notice">
+                    <strong>Nota:</strong> El asistente utiliza
+                    información documental y no ofrece datos
+                    de operación en tiempo real. Verifica los
+                    horarios, tarifas y novedades en los canales
+                    oficiales de TRANSMILENIO.
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p><strong>TransMiInfo</strong> - Asistente virtual</p>
+        <p>Proyecto académico de inteligencia artificial</p>
+        <p>Información institucional y operativa de TRANSMILENIO S.A.</p>
+    </footer>
+
+</body>
+</html>
